@@ -6,6 +6,9 @@ class Geolocation:
     def closest_parallel(self):
         return round(self.latitude)
 
+    
 
 
 
+tokyo  = Geolocation(latitude = 12.34, longitude =12.34).closest_parallel()
+print(tokyo)
