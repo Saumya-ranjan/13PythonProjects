@@ -1,16 +1,10 @@
-def palindrome(word):
-    for x in range(0,int(len(word)/2)):
-        if word[x] != word[len(word)-x-1]:
-            return False
-    return True
-            
+def palindrome(x):
+    if x[-1::-1] == x:
+        print(f"The word {x} is palindromic.")
+    else:
+        print("The word is Not palindromic")
 
 
-s = input("enter the word: ")
-ans = palindrome(s)
- 
-if (ans):
-    print("Yes")
-else:
-    print("No")
-  
+
+y = input("Enter a string: ")
+palindrome(y)
